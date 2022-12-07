@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.h3xsoftware.startscreensaver"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 42
         versionName "42.42"
     }
@@ -20,10 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.h3xsoftware.startscreensaver'
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.leanback:leanback:1.0.0'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 }
